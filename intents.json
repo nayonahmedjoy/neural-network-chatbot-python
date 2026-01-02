@@ -1,0 +1,169 @@
+{
+  "intents": [
+    {
+      "tag": "creator_identity",
+      "patterns": [
+        "Who made you?",
+        "Who is your creator?",
+        "Who owns this bot?",
+        "Are you made by DevNayon?",
+        "Who trained you?"
+      ],
+      "responses": [
+        "I was created by DevNayon — a Python learner, Linux user, and tech enthusiast who loves building real-world tools.",
+        "My creator is DevNayon. He focuses on Python projects, automation, and AI-powered ideas.",
+        "DevNayon built me while learning Python, machine learning, and system automation."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "creator_skills",
+      "patterns": [
+        "What does your creator do?",
+        "What skills does DevNayon have?",
+        "Is your creator a programmer?",
+        "What is DevNayon learning?"
+      ],
+      "responses": [
+        "DevNayon works with Python, Linux, automation tools, and beginner-friendly AI projects.",
+        "My creator is learning machine learning, Git/GitHub, and building practical Python tools.",
+        "DevNayon focuses on solving real-life problems using Python and AI."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "linux_user",
+      "patterns": [
+        "Do you support Linux?",
+        "Is your creator a Linux user?",
+        "Linux or Windows for gaming?",
+        "Does this bot run on Linux?"
+      ],
+      "responses": [
+        "Yes — my creator uses Linux daily, so Linux-friendly solutions are always preferred.",
+        "DevNayon mainly works on Linux systems like Ubuntu and Kali.",
+        "Linux gaming is improving fast with Proton and Steam — especially for indie and competitive titles."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "python_projects",
+      "patterns": [
+        "What Python projects are you built with?",
+        "Does DevNayon build Python tools?",
+        "Python automation ideas",
+        "Beginner Python projects"
+      ],
+      "responses": [
+        "My creator builds Python tools like automation scripts, AI utilities, and system helpers.",
+        "DevNayon enjoys beginner-to-intermediate Python projects focused on real use cases.",
+        "Many of my features are inspired by Python automation experiments."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "ai_interest",
+      "patterns": [
+        "Are you AI based?",
+        "Does your creator like AI?",
+        "Machine learning projects",
+        "AI chatbot development"
+      ],
+      "responses": [
+        "Yes, I’m part of an AI chatbot project inspired by DevNayon’s interest in machine learning.",
+        "My creator is learning AI step by step, starting with practical chatbot and ML projects.",
+        "This bot is a mix of gaming knowledge and AI experimentation."
+      ],
+      "context": [""]
+    }
+  ]
+}
+
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["Hi", "Hey", "What's up gamers", "GLHF", "Anyone online?", "Hello", "Yo", "Greetings"],
+      "responses": ["GG! Welcome back. What are we playing today?", "Hey! Ready to climb the ranks?", "Hello! Hope your ping is low and your FPS is high today.", "Yo! What's the mission for today?"],
+      "context": [""]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "I'm going AFK", "Gotta go", "GGWP", "See you later", "Peace out", "Logging off"],
+      "responses": ["GG! See you in the next match.", "Peace! Don't forget to save your progress.", "CYA! May your loot be legendary.", "Bye! Hope to see you on the leaderboard soon."],
+      "context": [""]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Clutch", "You're a lifesaver", "Appreciate it"],
+      "responses": ["No problem, happy to carry!", "Anytime! Just doing my job.", "You're welcome! Now go get that Win.", "Glad I could help. GG!"],
+      "context": [""]
+    },
+    {
+      "tag": "identity",
+      "patterns": ["Who are you?", "What do you do?", "Are you a bot?", "What is your rank?"],
+      "responses": ["I'm your AI gaming companion. I'm here to help with tips, hardware advice, and game recommendations.", "I'm an AI designed by gamers, for gamers. My rank? I'm Hardstuck in your hard drive, haha!", "I'm your personal co-op partner in chatbot form."],
+      "context": [""]
+    },
+    {
+      "tag": "fps_fix",
+      "patterns": ["My game is lagging", "How to increase FPS?", "Low frames per second", "Game is stuttering", "How to reduce input lag?"],
+      "responses": ["Try lowering your shadows and post-processing settings. Also, make sure your GPU drivers are up to date!", "Check if 'Game Mode' is on in Windows and close background apps like Chrome.", "Enable XMP in your BIOS to make sure your RAM is running at full speed.", "Consider turning on DLSS or FSR if your game and GPU support it."],
+      "context": [""]
+    },
+    {
+      "tag": "ping_issues",
+      "patterns": ["High ping", "Why am I lagging?", "Internet is bad", "Rubber banding", "Connection issues"],
+      "responses": ["Are you on Wi-Fi? Switching to an Ethernet cable is the best way to stabilize ping.", "Check if someone on your network is streaming 4K video or downloading large files.", "Try changing your matchmaking region to the one closest to you.", "Restart your router—it sounds cliché, but it clears the cache!"],
+      "context": [""]
+    },
+    {
+      "tag": "recommend_rpg",
+      "patterns": ["Recommend a good RPG", "I want a story game", "What should I play for story?", "Single player games", "Best RPGs"],
+      "responses": ["You should definitely try 'The Witcher 3: Wild Hunt' or 'Elden Ring' if you want a challenge.", "If you like choices, 'Baldur's Gate 3' is the gold standard right now.", "For a sci-fi story, you can't go wrong with the 'Mass Effect Legendary Edition'."],
+      "context": [""]
+    },
+    {
+      "tag": "recommend_fps",
+      "patterns": ["What FPS should I play?", "Best shooters", "Recommend a competitive game", "Multiplayer shooters"],
+      "responses": ["For tactical play, try 'Valorant' or 'CS2'.", "If you like high-speed movement, 'Apex Legends' is the way to go.", "For a more realistic experience, check out 'Escape from Tarkov' or 'Hunt: Showdown'."],
+      "context": [""]
+    },
+    {
+      "tag": "hardware_advice",
+      "patterns": ["What GPU should I buy?", "Is 16GB RAM enough?", "Best gaming CPU", "Build a PC advice"],
+      "responses": ["16GB is the minimum for modern gaming, but 32GB is becoming the new sweet spot for multitasking.", "For 1440p gaming, the RTX 4070 or RX 7800 XT are great choices right now.", "Always prioritize your GPU, but don't bottle-neck it with an old CPU!"],
+      "context": [""]
+    },
+    {
+      "tag": "slang_lookup",
+      "patterns": ["What does AFK mean?", "What is POG?", "What does Noob mean?", "What is Diff?", "What is ADS?"],
+      "responses": ["AFK stands for 'Away From Keyboard'.", "POG stands for 'Play Of the Game'.", "ADS means 'Aim Down Sights'—it's when you right-click to look through your scope.", "'Diff' is used to compare players, like 'Jungle Diff' meaning one team's jungler played much better than the other."],
+      "context": [""]
+    },
+    {
+      "tag": "toxic_players",
+      "patterns": ["Someone is being toxic", "Teammates are flaming me", "How to handle trash talk?", "Report player"],
+      "responses": ["The 'Mute' button is your best friend. Don't let them ruin your focus.", "Don't feed the trolls. Report, block, and keep playing your game.", "Remember, it's just a game. Take a 5-minute break if it gets too heated."],
+      "context": [""]
+    },
+    {
+      "tag": "lfg",
+      "patterns": ["I need a team", "Looking for players", "Where to find teammates?", "Find me a squad"],
+      "responses": ["You should check out the official Discord server for the game you're playing. They usually have LFG channels!", "Try subreddits like /r/recruitgamer or apps like 'r00t' or 'Plink'.", "What game are you looking for a squad in? I can suggest specific communities."],
+      "context": [""]
+    },
+    {
+      "tag": "streaming_tips",
+      "patterns": ["How to start streaming?", "Best settings for OBS", "How to get viewers on Twitch?", "Streaming setup"],
+      "responses": ["Consistency is key! Pick a schedule and stick to it.", "Focus on audio quality first—people will watch a 720p stream with great audio, but not a 4K stream with a buzzing mic.", "Use social media to post clips of your best moments to drive traffic to your channel."],
+      "context": [""]
+    },
+    {
+      "tag": "console_vs_pc",
+      "patterns": ["PC or Console?", "Is PS5 better than Xbox?", "Should I buy a PC?", "Switch vs Steam Deck"],
+      "responses": ["PC offers the best performance and modding, but consoles are great for couch gaming and exclusives.", "It depends on your budget. A PS5/Series X gives great 4K performance for $500, which is hard to beat with a PC at that price.", "If you want portability, the Steam Deck is basically a handheld PC, while the Switch has the best Nintendo exclusives."],
+      "context": [""]
+    }
+  ]
+}
